@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/mshack2020-frontend/static/js/main.d174dca0.chunk.js",
-    "main.js.map": "/mshack2020-frontend/static/js/main.d174dca0.chunk.js.map",
+    "main.js": "/mshack2020-frontend/static/js/main.ea606b43.chunk.js",
+    "main.js.map": "/mshack2020-frontend/static/js/main.ea606b43.chunk.js.map",
     "runtime-main.js": "/mshack2020-frontend/static/js/runtime-main.b27e76f7.js",
     "runtime-main.js.map": "/mshack2020-frontend/static/js/runtime-main.b27e76f7.js.map",
-    "static/js/2.619e2ab3.chunk.js": "/mshack2020-frontend/static/js/2.619e2ab3.chunk.js",
-    "static/js/2.619e2ab3.chunk.js.map": "/mshack2020-frontend/static/js/2.619e2ab3.chunk.js.map",
+    "static/js/2.135f2026.chunk.js": "/mshack2020-frontend/static/js/2.135f2026.chunk.js",
+    "static/js/2.135f2026.chunk.js.map": "/mshack2020-frontend/static/js/2.135f2026.chunk.js.map",
     "index.html": "/mshack2020-frontend/index.html",
-    "precache-manifest.0eefb7824949d32c5a49bb923d0e1ab7.js": "/mshack2020-frontend/precache-manifest.0eefb7824949d32c5a49bb923d0e1ab7.js",
+    "precache-manifest.4dea302741fa6e9e9491506ca3e0b85d.js": "/mshack2020-frontend/precache-manifest.4dea302741fa6e9e9491506ca3e0b85d.js",
     "service-worker.js": "/mshack2020-frontend/service-worker.js",
-    "static/js/2.619e2ab3.chunk.js.LICENSE.txt": "/mshack2020-frontend/static/js/2.619e2ab3.chunk.js.LICENSE.txt"
+    "static/js/2.135f2026.chunk.js.LICENSE.txt": "/mshack2020-frontend/static/js/2.135f2026.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b27e76f7.js",
-    "static/js/2.619e2ab3.chunk.js",
-    "static/js/main.d174dca0.chunk.js"
+    "static/js/2.135f2026.chunk.js",
+    "static/js/main.ea606b43.chunk.js"
   ]
 }
