@@ -1,14 +1,14 @@
 import { ThemeProvider } from '@material-ui/core';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Dashboard from './dashboard/Dashboard';
+import DashboardRouter from './dashboard/Router';
 import { theme } from './dashboard/theme';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <Dashboard />
+      <DashboardRouter />
     </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
