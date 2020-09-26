@@ -1,11 +1,15 @@
+import { ThemeProvider } from '@material-ui/core';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Dashboard from './dashboard/Dashboard';
+import { theme } from './dashboard/theme';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Dashboard />
+    <ThemeProvider theme={theme}>
+      <Dashboard />
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
