@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/mshack2020-frontend/static/js/main.0308da83.chunk.js",
-    "main.js.map": "/mshack2020-frontend/static/js/main.0308da83.chunk.js.map",
+    "main.js": "/mshack2020-frontend/static/js/main.c0e1b450.chunk.js",
+    "main.js.map": "/mshack2020-frontend/static/js/main.c0e1b450.chunk.js.map",
     "runtime-main.js": "/mshack2020-frontend/static/js/runtime-main.b27e76f7.js",
     "runtime-main.js.map": "/mshack2020-frontend/static/js/runtime-main.b27e76f7.js.map",
-    "static/js/2.bfa6cf65.chunk.js": "/mshack2020-frontend/static/js/2.bfa6cf65.chunk.js",
-    "static/js/2.bfa6cf65.chunk.js.map": "/mshack2020-frontend/static/js/2.bfa6cf65.chunk.js.map",
+    "static/js/2.3650dc5c.chunk.js": "/mshack2020-frontend/static/js/2.3650dc5c.chunk.js",
+    "static/js/2.3650dc5c.chunk.js.map": "/mshack2020-frontend/static/js/2.3650dc5c.chunk.js.map",
     "index.html": "/mshack2020-frontend/index.html",
-    "precache-manifest.0a2b04795b8ffa1c97ec6453aa5cb578.js": "/mshack2020-frontend/precache-manifest.0a2b04795b8ffa1c97ec6453aa5cb578.js",
+    "precache-manifest.fdd1def08cc0ba70ca2a62f0e7334251.js": "/mshack2020-frontend/precache-manifest.fdd1def08cc0ba70ca2a62f0e7334251.js",
     "service-worker.js": "/mshack2020-frontend/service-worker.js",
-    "static/js/2.bfa6cf65.chunk.js.LICENSE.txt": "/mshack2020-frontend/static/js/2.bfa6cf65.chunk.js.LICENSE.txt"
+    "static/js/2.3650dc5c.chunk.js.LICENSE.txt": "/mshack2020-frontend/static/js/2.3650dc5c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b27e76f7.js",
-    "static/js/2.bfa6cf65.chunk.js",
-    "static/js/main.0308da83.chunk.js"
+    "static/js/2.3650dc5c.chunk.js",
+    "static/js/main.c0e1b450.chunk.js"
   ]
 }
