@@ -13,7 +13,8 @@ import Link from '@material-ui/core/Link';
 import axios from 'axios';
 import { Table, TableHead, TableRow, TableCell, TableBody } from '@material-ui/core';
 import Title from './Title';
-import ReactMapGL from 'react-map-gl';
+import Map from "./Map";
+
 
 
 function Copyright() {
@@ -96,24 +97,22 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     overflow: 'auto',
     flexDirection: 'column',
+    width: '100%',
   },
   fixedHeight: {
     height: 240,
   },
 }));
 
+
+
 export default function Dashboard() {
   const classes = useStyles();
 
   const [counts, setCounts] = useState();
   const [devices, setDevices] = useState<{ id: string, data: any, lon: number, lat: number }[] | undefined>();
-  const [viewport, setViewport] = useState({
-    width: 400,
-    height: 400,
-    latitude: 37.7577,
-    longitude: -122.4376,
-    zoom: 8
-  });
+
+  
 
   useEffect(() => {
     async function fetchData() {
@@ -147,13 +146,9 @@ export default function Dashboard() {
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
           <Grid container spacing={3}>
-            <Grid item xs={12} >
-              <ReactMapGL
-                {...viewport}
-                onViewportChange={nextViewport => setViewport(nextViewport)}
-                mapboxApiAccessToken={"pk.eyJ1Ijoic2ltc2Fsb3IiLCJhIjoiY2tmamhwMWVyMGhmMDMwcWh6MXdiM2VteCJ9.PCIgKMZhUfVyhyECwTQKpg"}
-              />
-            </Grid>
+            <Paper className={classes.paper}>
+              <Map></Map>
+            </Paper>
             <Grid item xs={12}>
               <Paper className={classes.paper}>
                 <Title>Devices</Title>
