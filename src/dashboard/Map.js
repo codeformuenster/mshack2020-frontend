@@ -74,14 +74,20 @@ export default class Map extends Component {
           />
           {this.state.devices.map((marker, index) => {
             var image = "circle";
-            if (marker.id.includes("ttgo-beam")) {
-              image = "wifi";
-            } else if (marker.id.includes("cam")) {
-              image = "camera";
-            } else if (marker.id.includes("mobile")) {
-              image = "mobile";
-            } else if (marker.id.includes("street")) {
-              image = "angle down";
+            if (marker.id.includes("ttgo-beam")){
+              image = "wifi"
+            }
+            else if (marker.id.includes("cam")){
+              image = "camera"
+            }
+            else if (marker.id.includes("mobile")){
+              image = "mobile"
+            }
+            else if (marker.id.includes("_street")){
+              image = "camera"
+            }
+            else if (marker.id.includes("hystreet")){
+              image = "magic"
             }
 
             return (
