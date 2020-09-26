@@ -164,7 +164,7 @@ export default function Dashboard() {
                     {devices && devices.map((device: any) => {
                       return (
                         <TableRow key={device.id} >
-                          <TableCell>{device.id}</TableCell>
+                          <TableCell><Link href={device.id}>{device.id}</Link></TableCell>
                           <TableCell>{device.lon}</TableCell>
                           <TableCell>{device.lat}</TableCell>
                         </TableRow>
