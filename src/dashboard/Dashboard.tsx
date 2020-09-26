@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -10,9 +10,11 @@ import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Link from '@material-ui/core/Link';
-import Chart from './Chart';
-import Deposits from './Deposits';
-import Orders from './Orders';
+import axios from 'axios';
+import { Table, TableHead, TableRow, TableCell, TableBody } from '@material-ui/core';
+import Title from './Title';
+import ReactMapGL from 'react-map-gl';
+
 
 function Copyright() {
   return (
@@ -102,7 +104,34 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Dashboard() {
   const classes = useStyles();
-  const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
+
+  const [counts, setCounts] = useState();
+  const [devices, setDevices] = useState<{ id: string, data: any, lon: number, lat: number }[] | undefined>();
+  const [viewport, setViewport] = useState({
+    width: 400,
+    height: 400,
+    latitude: 37.7577,
+    longitude: -122.4376,
+    zoom: 8
+  });
+
+  useEffect(() => {
+    async function fetchData() {
+      const result_counts = await axios(
+        'https://counting-backend.codeformuenster.org/counts',
+      );
+      setCounts(result_counts.data);
+      const result_devices = await axios(
+        'https://counting-backend.codeformuenster.org/devices',
+      );
+      setDevices(result_devices.data);
+    }
+    fetchData()
+  }, []);
+
+  console.log(counts)
+  console.log(devices)
+
 
   return (
     <div className={classes.root}>
@@ -118,22 +147,36 @@ export default function Dashboard() {
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
           <Grid container spacing={3}>
-            {/* Chart */}
-            <Grid item xs={12} md={8} lg={9}>
-              <Paper className={fixedHeightPaper}>
-                <Chart />
-              </Paper>
+            <Grid item xs={12} >
+              <ReactMapGL
+                {...viewport}
+                onViewportChange={nextViewport => setViewport(nextViewport)}
+                mapboxApiAccessToken={"pk.eyJ1Ijoic2ltc2Fsb3IiLCJhIjoiY2tmamhwMWVyMGhmMDMwcWh6MXdiM2VteCJ9.PCIgKMZhUfVyhyECwTQKpg"}
+              />
             </Grid>
-            {/* Recent Deposits */}
-            <Grid item xs={12} md={4} lg={3}>
-              <Paper className={fixedHeightPaper}>
-                <Deposits />
-              </Paper>
-            </Grid>
-            {/* Recent Orders */}
             <Grid item xs={12}>
               <Paper className={classes.paper}>
-                <Orders />
+                <Title>Devices</Title>
+                <Table size="small">
+                  <TableHead>
+                    <TableRow>
+                      <TableCell>Id</TableCell>
+                      <TableCell>Longitude</TableCell>
+                      <TableCell>Latidue</TableCell>
+                    </TableRow>
+                  </TableHead>
+                  <TableBody>
+                    {devices && devices.map((device: any) => {
+                      return (
+                        <TableRow key={device.id} >
+                          <TableCell>{device.id}</TableCell>
+                          <TableCell>{device.lon}</TableCell>
+                          <TableCell>{device.lat}</TableCell>
+                        </TableRow>
+                      )
+                    })}
+                  </TableBody>
+                </Table>
               </Paper>
             </Grid>
           </Grid>
