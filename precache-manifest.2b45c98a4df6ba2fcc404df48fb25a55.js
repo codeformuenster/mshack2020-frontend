@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "05eb9a69b0b0945e995fd92238a2d698",
+    "revision": "401674249a55ef2fcc93b7cc57b55b7f",
     "url": "/mshack2020-frontend/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mshack2020-frontend/static/js/2.2b4df3ce.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d14bc9c1ae75d3928d8d",
-    "url": "/mshack2020-frontend/static/js/main.f234c361.chunk.js"
+    "revision": "b3007be64ec47b97324b",
+    "url": "/mshack2020-frontend/static/js/main.25202501.chunk.js"
   },
   {
     "revision": "3e366ed2d46129bf0cec",
