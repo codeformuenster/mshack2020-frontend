@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mshack2020-frontend/precache-manifest.2b45c98a4df6ba2fcc404df48fb25a55.js"
+  "/mshack2020-frontend/precache-manifest.e20adb1ed727900f06dbabee57c722d5.js"
 );
 
 self.addEventListener('message', (event) => {
