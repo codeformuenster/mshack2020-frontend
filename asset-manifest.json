@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/mshack2020-frontend/static/js/main.519f7266.chunk.js",
-    "main.js.map": "/mshack2020-frontend/static/js/main.519f7266.chunk.js.map",
-    "runtime-main.js": "/mshack2020-frontend/static/js/runtime-main.b27e76f7.js",
-    "runtime-main.js.map": "/mshack2020-frontend/static/js/runtime-main.b27e76f7.js.map",
-    "static/js/2.135f2026.chunk.js": "/mshack2020-frontend/static/js/2.135f2026.chunk.js",
-    "static/js/2.135f2026.chunk.js.map": "/mshack2020-frontend/static/js/2.135f2026.chunk.js.map",
-    "index.html": "/mshack2020-frontend/index.html",
-    "precache-manifest.dc75c928ce9acf340370f403d2c8a502.js": "/mshack2020-frontend/precache-manifest.dc75c928ce9acf340370f403d2c8a502.js",
-    "service-worker.js": "/mshack2020-frontend/service-worker.js",
-    "static/js/2.135f2026.chunk.js.LICENSE.txt": "/mshack2020-frontend/static/js/2.135f2026.chunk.js.LICENSE.txt"
+    "main.js": "/static/js/main.f58607aa.chunk.js",
+    "main.js.map": "/static/js/main.f58607aa.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.29db2498.js",
+    "runtime-main.js.map": "/static/js/runtime-main.29db2498.js.map",
+    "static/js/2.51980bdf.chunk.js": "/static/js/2.51980bdf.chunk.js",
+    "static/js/2.51980bdf.chunk.js.map": "/static/js/2.51980bdf.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.ab64b194ed359ddf15739dc930a5d999.js": "/precache-manifest.ab64b194ed359ddf15739dc930a5d999.js",
+    "service-worker.js": "/service-worker.js",
+    "static/js/2.51980bdf.chunk.js.LICENSE.txt": "/static/js/2.51980bdf.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b27e76f7.js",
-    "static/js/2.135f2026.chunk.js",
-    "static/js/main.519f7266.chunk.js"
+    "static/js/runtime-main.29db2498.js",
+    "static/js/2.51980bdf.chunk.js",
+    "static/js/main.f58607aa.chunk.js"
   ]
 }
