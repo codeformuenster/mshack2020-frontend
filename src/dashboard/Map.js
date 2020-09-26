@@ -86,8 +86,11 @@ export default class Map extends Component {
             else if (marker.id.includes("mobile")){
               image = "mobile"
             }
-            else if (marker.id.includes("street")){
-              image = "angle down"
+            else if (marker.id.includes("_street")){
+              image = "camera"
+            }
+            else if (marker.id.includes("hystreet")){
+              image = "magic"
             }
 
             return (
