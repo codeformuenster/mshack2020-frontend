@@ -1,8 +1,8 @@
 import { ThemeProvider } from '@material-ui/core';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import DashboardRouter from './dashboard/Router';
-import { theme } from './dashboard/theme';
+import DashboardRouter from './Router';
+import { theme } from './theme';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
